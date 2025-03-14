@@ -1,0 +1,19 @@
+pip install django
+django-admin startproject fresh
+python .\manage.py startapp market
+python .\manage.py makemigrations market
+python .\manage.py migrate
+python .\manage.py createsuperuser
+
+pip install djangorestframework
+# pip install django-rest-swagger
+pip install drf-yasg
+pip install --upgrade drf-yasg[validation]
+pip install django-filter
+
+
+
+pip freeze
+pip freeze > requriments.txt
+
+django-admin --version
