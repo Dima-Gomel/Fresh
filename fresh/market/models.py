@@ -13,7 +13,7 @@ class Product(models.Model):
     is_available = models.BooleanField(default=True, verbose_name="Доступен для продажи")
 
     def __str__(self):
-        return f"{self.name} ({self.category.name})"
+        return f"{self.name}"
 
     class Meta:
         verbose_name = "Продукт"
